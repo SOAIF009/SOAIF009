@@ -1,14 +1,15 @@
-<html lang="en"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘</title>
 <!-- Firebase SDK scripts -->
 <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 <style>
   :root {
@@ -1290,7 +1291,7 @@
 
 </style>
 </head>
-<body style="overflow: hidden;">
+<body>
   <!-- Maintenance Overlay -->
   <div id="maintenanceOverlay" style="display: none;">
     <div class="content">
@@ -1300,15 +1301,15 @@
   </div>
 
   <!-- Backgrounds -->
-  <div id="loginBg" class="liquid-bg"> <div class="liquid-blob"></div> <div class="liquid-blob"></div> </div>
-  <div id="dashboardBg" class="liquid-bg active">
+  <div id="loginBg" class="liquid-bg active"> <div class="liquid-blob"></div> <div class="liquid-blob"></div> </div>
+  <div id="dashboardBg" class="liquid-bg">
   </div>
 
   <!-- Premium Auth UI -->
   <div id="premiumAuthContainer">
     <div class="premium-auth-box">
       <div class="premium-auth-left-panel">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitled_design_4.png?alt=media&amp;token=c804a64c-a2ca-47ef-9f49-98d9a98d20d1" alt="KillerX Logo" class="auth-logo">
+        <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitled_design_4.png?alt=media&token=c804a64c-a2ca-47ef-9f49-98d9a98d20d1" alt="KillerX Logo" class="auth-logo">
         <h1 class="app-name-title">𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘</h1>
         <p class="developer-name">MD RANA MIRZA</p>
         <h2 class="features-title">Best Gaming Experience</h2>
@@ -1333,7 +1334,7 @@
           </div>
           <div class="form-options">
             <div class="remember-me-container">
-                <input type="checkbox" id="premiumRememberMeCheckbox">
+                <input type="checkbox" id="premiumRememberMeCheckbox" />
                 <label for="premiumRememberMeCheckbox">Remember Me</label>
             </div>
           </div>
@@ -1383,16 +1384,16 @@
 
 
   <!-- Dashboard Panel -->
-  <div id="dashboardPanel" class="content-panel" style="display: flex;">
+  <div id="dashboardPanel" class="content-panel" style="display: none;">
     <button class="menu-toggle-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
     
-    <div class="notification-wrapper-main" id="helplineIconWrapper" style="right: 120px; top: 20px;">
+    <div class="notification-wrapper-main" id="helplineIconWrapper" style="right: 170px;">
         <button class="notification-btn" onclick="openHelpline()"><i class="fas fa-headset" style="color: var(--success);"></i></button>
     </div>
-    <div class="notification-wrapper-main" id="storeIconWrapper" style="right: 70px; top: 20px;">
+    <div class="notification-wrapper-main" id="storeIconWrapper" style="right: 120px;">
         <button class="notification-btn" onclick="openGeneralStoreModal()"><i class="fas fa-shopping-bag"></i></button>
     </div>
-    <div class="notification-wrapper-main" id="packageRenewHeaderIconWrapper" style="right: 70px; display: none; top: 20px;"> <!-- Hidden by default -->
+    <div class="notification-wrapper-main" id="packageRenewHeaderIconWrapper" style="right: 70px; display: none;"> <!-- Hidden by default -->
         <button class="notification-btn" onclick="openPackageRenewModal()"><i class="fas fa-history"></i></button> 
     </div>
     <div class="notification-wrapper-main" id="bellIconWrapper" style="right: 20px;">
@@ -1434,25 +1435,26 @@
     </div>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="main-dashboard-content">
-        <div class="dashboard-header"> <img src="https://cdn.discordapp.com/attachments/1308500551448924210/1399061719254302790/ELITE.png?ex=6887a143&amp;is=68864fc3&amp;hm=5a9242d76636b34a49653991287bc3150fba95aaeb486a809fc2169e15fb57cc&amp;" class="profile-img" alt="Profile"> <div class="killerx-title">𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘<span>OFFICAL</span></div> </div>
-        <div class="user-id-display">User ID : <span id="dashboardUserIdValue">SOAIF</span> </div>
+        <div class="dashboard-header"> <img src="https://cdn.discordapp.com/attachments/1308500551448924210/1399061719254302790/ELITE.png?ex=6887a143&is=68864fc3&hm=5a9242d76636b34a49653991287bc3150fba95aaeb486a809fc2169e15fb57cc&" class="profile-img" alt="Profile" /> <div class="killerx-title">𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘<span>OFFICAL</span></div> </div>
+        <div class="user-id-display">User ID : <span id="dashboardUserIdValue"></span> </div>
         
         <div class="balance-container">
             <div class="points" id="points">0</div>
             <div class="balance-label">Balance</div>
         </div>
-        <div class="redeem-section-wrapper"> <h3>Redeem Key</h3> <p>Activate your purchased key by informing below</p> <div class="redeem-input-container"> <i class="fas fa-gift"></i> <input id="redeemCodeInput" type="text" placeholder="NATIONAL COMMUNITY-PRODUCT-XXXX"> <button onclick="redeemCode()">REDEEM KEY</button> </div> </div>
+        <div class="redeem-section-wrapper"> <h3>Redeem Key</h3> <p>Activate your purchased key by informing below</p> <div class="redeem-input-container"> <i class="fas fa-gift"></i> <input id="redeemCodeInput" type="text" placeholder="NATIONAL COMMUNITY-PRODUCT-XXXX" /> <button onclick="redeemCode()">REDEEM KEY</button> </div> </div>
         
-        <div class="bonus-system-container"> <div class="bonus-add-balance-section"> <h2>টাকা যোগ করুন এবং বোনাস পান</h2> <div class="bonus-progress-bar"><div class="milestone-item unlocked" id="milestone-0"><div class="milestone-marker"><i class="fas fa-unlock-alt"></i><span>৳0</span></div><span class="milestone-bonus-text">বোনাস ৳0</span></div><div class="milestone-item" id="milestone-100"><div class="milestone-marker"><i class="fas fa-lock"></i><span>৳100</span></div><span class="milestone-bonus-text">বোনাস ৳20</span></div><div class="milestone-item" id="milestone-500"><div class="milestone-marker"><i class="fas fa-lock"></i><span>৳500</span></div><span class="milestone-bonus-text">বোনাস ৳100</span></div><div class="milestone-item" id="milestone-1000"><div class="milestone-marker"><i class="fas fa-lock"></i><span>৳1000</span></div><span class="milestone-bonus-text">বোনাস ৳250</span></div><div class="milestone-item" id="milestone-3000"><div class="milestone-marker"><i class="fas fa-lock"></i><span>৳3000</span></div><span class="milestone-bonus-text">বোনাস ৳500</span></div><div class="milestone-item" id="milestone-5000"><div class="milestone-marker"><i class="fas fa-lock"></i><span>৳5000</span></div><span class="milestone-bonus-text">বোনাস ৳1000</span></div></div> <div class="bonus-summary"> <div class="summary-item"><span>মোট যোগ হয়েছে</span><strong id="totalAddedForBonusDisplay">৳0</strong></div> <div class="summary-item"><span>পরবর্তী ধাপ</span><strong id="nextBonusMetaDisplay">৳100</strong></div> <div class="summary-item recent-bonus-item"><span>সাম্প্রতিক বোনাস</span><strong id="recentBonusDisplay">৳0</strong></div> </div> </div> <div class="bonus-accumulated-section"> <i class="fas fa-coins bonus-chest-img"></i> <h2>আপনার জমাকৃত বোনাস</h2> <div class="accumulated-bonus-value-wrapper"><i class="fas fa-coins"></i><span id="accumulatedBonusDisplay">৳0.00</span></div> <button class="claim-bonus-btn" onclick="claimBonus()" disabled="">বোনাস সংগ্রহ করুন</button> </div> </div>
+        <div class="bonus-system-container"> <div class="bonus-add-balance-section"> <h2>টাকা যোগ করুন এবং বোনাস পান</h2> <div class="bonus-progress-bar"></div> <div class="bonus-summary"> <div class="summary-item"><span>মোট যোগ হয়েছে</span><strong id="totalAddedForBonusDisplay">৳0</strong></div> <div class="summary-item"><span>পরবর্তী ধাপ</span><strong id="nextBonusMetaDisplay">৳0</strong></div> <div class="summary-item recent-bonus-item"><span>সাম্প্রতিক বোনাস</span><strong id="recentBonusDisplay">৳0</strong></div> </div> </div> <div class="bonus-accumulated-section"> <i class="fas fa-coins bonus-chest-img"></i> <h2>আপনার জমাকৃত বোনাস</h2> <div class="accumulated-bonus-value-wrapper"><i class="fas fa-coins"></i><span id="accumulatedBonusDisplay">৳0.00</span></div> <button class="claim-bonus-btn" onclick="claimBonus()">বোনাস সংগ্রহ করুন</button> </div> </div>
         
         <div class="user-info-details-panel">
-            <div class="info-header">INFORMATION <span id="infoFreeHwidReset" class="free-hwid-reset-display">0/1 FREE HW ID reset</span></div>
+            <div class="info-header">INFORMATION <span id="infoFreeHwidReset" class="free-hwid-reset-display">1/1 FREE HW ID reset</span></div>
             <p><span class="label-title"><i class="fas fa-fingerprint"></i> Hardware ID :</span> <span id="infoHardwareId" class="value-text">N/A</span></p>
-            <p><span class="label-title"><i class="fas fa-calendar-alt"></i> JOIN DATE :</span> <span id="infoJoinDate" class="value-text">7/27/2025</span></p>
-            <p><span class="label-title"><i id="infoDeviceIcon" class="fas fa-desktop"></i> DEVICE :</span> <span id="infoDeviceType" class="value-text">Desktop</span></p>
+            <p><span class="label-title"><i class="fas fa-calendar-alt"></i> JOIN DATE :</span> <span id="infoJoinDate" class="value-text">N/A</span></p>
+            <p><span class="label-title"><i id="infoDeviceIcon" class="fas fa-desktop"></i> DEVICE :</span> <span id="infoDeviceType" class="value-text">N/A</span></p>
         </div>
 
-        <div id="activeProductDisplayPanelContainer"><p style="text-align: center; color: rgba(255, 255, 255, 0.7); padding: 20px;">No active products. Redeem a key or purchase from store to get started!</p></div>
+        <div id="activeProductDisplayPanelContainer">
+        </div>
 
         <div class="overview-card-standalone"> <div class="card-title">NATIONAL COMMUNITY OVERVIEW.......................!!!</div> <div class="card-text">NATIONAL COMMUNITY OFFICIAL WEBSITE</div> <div class="card-text">OWNER DASHBOARD </div> <div class="contact-info"> <span><i class="fas fa-user-tie"></i>OWNER ➤ MD RANA MIRZA</span> <span><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+8801842594359" target="_blank">  WhatsApp 01842594359</a></span> </div> </div>
     </div>
@@ -1473,7 +1475,7 @@
 
         <input type="number" id="customAmountInput" placeholder="Enter Amount (Min ৳50)" min="50" step="10">
         <div class="bonus-message" id="addMoneyBonusMessage"><i class="fas fa-info-circle"></i> ১০০ টাকার বেশি অ্যাড করলেই বোনাস পাবেন 🥰!</div>
-        <button class="confirm-btn" id="confirmAddMoneyBtn" onclick="confirmAdd()" disabled=""><i class="fas fa-check-circle"></i> Confirm &amp; Proceed</button>
+        <button class="confirm-btn" id="confirmAddMoneyBtn" onclick="confirmAdd()" disabled><i class="fas fa-check-circle"></i> Confirm & Proceed</button>
     </div>
   </div>
 
@@ -1485,16 +1487,16 @@
         <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
             <!-- MODIFIED: Onclick calls the new flow function -->
             <button class="premium-dashboard-button" onclick="selectPaymentMethod('bkash')">
-                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitled.png?alt=media&amp;token=fc1cd24b-930a-4547-8d09-f544ef5d2165" alt="Bkash"> Bkash
+                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitled.png?alt=media&token=fc1cd24b-930a-4547-8d09-f544ef5d2165" alt="Bkash"> Bkash
             </button>
             <button class="premium-dashboard-button" onclick="selectPaymentMethod('nagad')">
-                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitled.jpeg?alt=media&amp;token=98b94d4c-afc8-4830-9842-627100bd8c49" alt="Nagad"> Nagad
+                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitled.jpeg?alt=media&token=98b94d4c-afc8-4830-9842-627100bd8c49" alt="Nagad"> Nagad
             </button>
             <button class="premium-dashboard-button" onclick="selectPaymentMethod('rocket')">
-                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitl.jpeg?alt=media&amp;token=c0452c5b-21d5-47d7-8966-adf7f8df07ee" alt="Rocket"> Rocket
+                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/Untitl.jpeg?alt=media&token=c0452c5b-21d5-47d7-8966-adf7f8df07ee" alt="Rocket"> Rocket
             </button>
             <button class="premium-dashboard-button" onclick="selectPaymentMethod('binance')">
-                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/download.png?alt=media&amp;token=8f650e93-5df8-4aa1-9b2f-fccf72aac663" alt="Binance"> Binance Pay
+                <img src="https://firebasestorage.googleapis.com/v0/b/ng-mods-x2.appspot.com/o/download.png?alt=media&token=8f650e93-5df8-4aa1-9b2f-fccf72aac663" alt="Binance"> Binance Pay
             </button>
             <button class="premium-dashboard-button" onclick="selectPaymentMethod('crypto')">
                 <i class="fab fa-btc" style="font-size: 24px; color: #f7931a;"></i> Crypto (USDT TRC20)
@@ -1511,7 +1513,7 @@
           <div id="paymentGatewayInstructions" style="text-align: left; margin: 20px 0; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 10px; font-size: 13px; line-height: 1.7; border: 1px solid rgba(255,255,255,0.1);"></div>
           
           <div id="proofTypeSelector" style="text-align: left; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; gap: 20px;">
-              <label style="cursor: pointer;"><input type="radio" name="proofType" value="id" checked="" onchange="toggleProofInput('id')"> Transaction ID</label>
+              <label style="cursor: pointer;"><input type="radio" name="proofType" value="id" checked onchange="toggleProofInput('id')"> Transaction ID</label>
               <label style="cursor: pointer;"><input type="radio" name="proofType" value="screenshot" onchange="toggleProofInput('screenshot')"> Screenshot</label>
           </div>
   
@@ -1573,59 +1575,19 @@
   </div>
   <div class="modal-bg" id="toolsModal" style="display: none;"><div class="modal"><button class="close-btn" onclick="closeToolsModal()">×</button><h2><i class="fas fa-tools"></i> Download Tools</h2><div id="toolsList" class="tools-list" style="margin: 20px 0;"><p style="text-align:center;">Loading tools...</p></div></div></div>
 
-  <div class="modal-bg" id="generalStoreModal" style="display: flex;">
+  <div class="modal-bg" id="generalStoreModal" style="display: none;">
     <div class="modal" style="max-width: 95%; width: 950px;"> <!-- Increased width here -->
       <button class="close-btn" onclick="closeGeneralStoreModal()">×</button>
       <h2><i class="fas fa-shopping-bag"></i> General Store</h2>
       <div class="general-store-controls">
-        <select id="generalStoreCategoryFilter"><option value="">All Categories</option><option value="PREMIUM_PANEL">Premium Panel</option><option value="BYPASS">Bypass</option><option value="UNSAFE_PANEL">Unsafe Panel</option></select>
+        <select id="generalStoreCategoryFilter">
+            <option value="">All Categories</option>
+        </select>
         <input type="search" id="generalStoreSearchInput" placeholder="Search products...">
       </div>
-      <div id="generalStoreProductList" class="general-store-product-grid" style="margin-top: 10px; max-height: 55vh; overflow-y: auto;"><div class="general-store-product-item">
-            
-            <img src="https://statik.tempo.co/data/2025/01/09/id_1368091/1368091_720.jpg" alt="KILLER X PREMIUM PANEL">
-            <h3 class="product-title">KILLER X PREMIUM PANEL</h3>
-            <p class="product-description">Premium panel 
-Aimbot head drag 
-Sniper auto aimbot</p>
-            <p class="product-validity">Validity: 1 month</p>
-            <p class="product-price">500৳</p>
-            <button class="buy-item-button">
-                <i class="fas fa-shopping-cart"></i> Buy Now
-            </button>
-        </div><div class="general-store-product-item">
-            
-            <img src="https://statik.tempo.co/data/2025/01/09/id_1368091/1368091_720.jpg" alt="KILLER X PREMIUM LIFETIME">
-            <h3 class="product-title">KILLER X PREMIUM LIFETIME</h3>
-            <p class="product-description">Premium panel 
-Aimbot head drag 
-Sniper auto aimbot</p>
-            <p class="product-validity">Validity: Lifetime (30-day active cycles)</p>
-            <p class="product-price">2700৳</p>
-            <button class="buy-item-button">
-                <i class="fas fa-shopping-cart"></i> Buy Now
-            </button>
-        </div><div class="general-store-product-item">
-            
-            <img src="https://i.ytimg.com/vi/bfqLYkIkc80/maxresdefault.jpg" alt="KILLER X BYPASS">
-            <h3 class="product-title">KILLER X BYPASS</h3>
-            <p class="product-description">BYPASS</p>
-            <p class="product-validity">Validity: 1 month</p>
-            <p class="product-price">700৳</p>
-            <button class="buy-item-button">
-                <i class="fas fa-shopping-cart"></i> Buy Now
-            </button>
-        </div><div class="general-store-product-item">
-            <div class="out-of-stock-badge">OUT OF STOCK</div>
-            <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXccKOiOSVktLJ1pZK8SkEtlUidMthlZzpCwbNz1r8a7UV1T0Kx9IMQGPLVDWHbWn4hUYpt_5aeEhmq0WPCnPR8bUuv_FN3l7cS8iTD2dCmhRk4xzwk9twlTNSrLGgwZTHxWh5Ky_un6WD9abTBx6rzqRs0?key=6PtFz-91PRf0P3RRFqKsKA" alt="KILLER X UNSAFE">
-            <h3 class="product-title">KILLER X UNSAFE</h3>
-            <p class="product-description">KILLER X UNSAFE PANEL</p>
-            <p class="product-validity">Validity: 1 month</p>
-            <p class="product-price">800৳</p>
-            <button class="buy-item-button" disabled="">
-                <i class="fas fa-shopping-cart"></i> Out of Stock
-            </button>
-        </div></div>
+      <div id="generalStoreProductList" class="general-store-product-grid" style="margin-top: 10px; max-height: 55vh; overflow-y: auto;">
+        <div class="empty-history"><i class="fas fa-spinner fa-spin"></i><p>Loading products...</p></div>
+      </div>
     </div>
   </div>
 
@@ -1678,7 +1640,7 @@ Sniper auto aimbot</p>
         <div style="margin-top: 20px;">
             <div class="modal-form-group">
                 <label for="editProfileCurrentUserId">User ID (Cannot be changed)</label>
-                <input type="text" id="editProfileCurrentUserId" readonly="">
+                <input type="text" id="editProfileCurrentUserId" readonly>
             </div>
             <div class="modal-form-group">
                 <label for="editProfileNewPassword">New Password (min. 6 chars)</label>
@@ -4124,6 +4086,5 @@ function closeProductHistoryModal() {
 }
 
 </script>
-
-
-</body></html>
+</body>
+</html>
